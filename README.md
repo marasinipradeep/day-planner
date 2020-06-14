@@ -1,46 +1,34 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# day-planner
+Schedule your day with a day planner
 
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+## Basic Overview - [Live Demo](https://marasinipradeep.github.io/day-planner/)
+This is a simple calendar application that allows the user to save events for each hour of the day. Also, this app is helpful to an employee with a busy schedule to gauge events so that they can manage their time effectively.
 
-## User Story
-
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
-## Acceptance Criteria
+#### Features
+ This app will run in the browser and feature dynamically updated HTML and CSS powered by Jqurey code. It has a clean and polished user interface and is responsive  to multiple screen sizes.
 
 ```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+-Daily planner is used to create a schedule.
+-when opening the planner current day is displayed at the top of the calendar.
+-When scrolled down presented with time blocks of standard business hours.
+-When viewed the time blocks for that day the time blocks are colour coded which indicates whether it is in the past, present, or future.
+-When clicked into a time block user can enter an event.
+-When clicked the save button for that time block the text for that event is saved in local storage.
+-When page is refreshed still the saved events persist.
+
+
 ```
 
-The following animation demonstrates the application functionality:
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+ ## Getting started
 
-## Review
+-First of all, Clone the project from github to local machine.
+-Alternatively, you can download the .zip file and extract in suitable folder on local machine. 
+-Open the file with suitable code editor (For examplle:-Visual Studio code, Sublime Text, Atom etc).
+-You can view live demo clicking on link above.
 
-You are required to submit the following for review:
+## Demo  of Quiz code 
 
-* The URL of the deployed application.
+![demo for coding assessment](Assets/images/demoDayPlanner.gif)
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
