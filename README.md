@@ -12,12 +12,20 @@ This is a simple calendar application that allows the user to save events for ea
 -Daily planner is used to create a schedule.
 -when opening the planner current day is displayed at the top of the calendar.
 -When scrolled down presented with time blocks of standard business hours.
--When viewed the time blocks for that day the time blocks are colour coded which indicates whether it is in the past, present, or future.
--When clicked into a time block user can enter an event.
+-The time blocks are colour coded which indicates whether it is in the past, present, or future.
+-User can enter an event by clicking into a text area
 -When clicked the save button for that time block the text for that event is saved in local storage.
 -When page is refreshed still the saved events persist.
 
+```
 
+## Resources Used
+```
+-Moment Library (https://momentjs.com/docs/).
+-Bootstrap framework (https://getbootstrap.com/).
+-Jquery library (https://jquery.com/).
+-Font awesome for awesome icons (https://fontawesome.com/)
+-ScreenCastify to make demo image as gif.
 ```
 
 
@@ -30,5 +38,5 @@ This is a simple calendar application that allows the user to save events for ea
 
 ## Demo  of Quiz code 
 
-![demo for coding assessment](Assets/images/demoDayPlanner.gif)
+![demo of day planner](Assets/images/final_day_planner_demo.gif)
 
