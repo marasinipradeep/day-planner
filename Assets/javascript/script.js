@@ -68,13 +68,10 @@ function checkLocalStorage() {
 /*The Background color of text area changes on condition of time which is past, present and future */
 
 $.each(dayPlanner.listOfTask, function (index, item) {
-    var blockDiv = $("<div>")
-    blockDiv.addClass("row")
+    var blockDiv = $("<div>").addClass("row")
     var time = $("<h3>").addClass("col-3 hour").text(item.workTime).data("timeSlot", item.workTime)
 
-    var schedule = $("<textarea/>").text(item.task)
-    schedule.addClass("col-8").data("textAreaRow", index)
-
+    var schedule = $("<textarea/>").text(item.task).addClass("col-7").data("textAreaRow", index)
     if (dayPlanner.time[index] < moment().format("HH")) {
         schedule.addClass("past")
     }
@@ -86,16 +83,13 @@ $.each(dayPlanner.listOfTask, function (index, item) {
         schedule.addClass("future")
     }
 
-    var saveButton = $("<button>")
-    saveButton.addClass("col-1 saveBtn fa fa-save")
-    saveButton.data("saveButton", index + 1)
+    var saveButton = $("<button>").addClass("col-2 saveBtn fa fa-save").data("saveButton", index + 1)
     saveButton.on("click", function () {
         init();
         onButtonClickes(time, schedule, saveButton);
     })
     blockDiv.append(time, schedule, saveButton)
     timeBlocksEl.append(blockDiv)
-
 })
 
 /*When user clicks on save button compares the value of text area and save button if matches saves on local storages */
